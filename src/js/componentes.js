@@ -88,13 +88,13 @@ ulFiltros.addEventListener('click', (event) => {
     for (const elemento of divTododoList.children) {
 
         elemento.classList.remove('hidden');
-        const completados = elemento.classList.contains('completed');
+        const Completados = elemento.classList.contains('completed');
 
         switch (filtro) {
 
 
             case 'Pendientes':
-                if (completados) {
+                if (Completados) {
                     elemento.classList.add('hidden');
 
                 }
@@ -102,7 +102,7 @@ ulFiltros.addEventListener('click', (event) => {
 
 
             case 'Completados':
-                if (!completados) {
+                if (!Completados) {
                     elemento.classList.add('hidden');
 
                 }
