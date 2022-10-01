@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js",
     "build:dev": "webpack --config webpack.config.js",
-    "start": "webpack-dev-server --open --port=8080"
+    "start": "webpack serve --open --port=8080"
   },
-  "author": "Fernando Herrera",
+  "author": "Carmen Barajas",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.8.3",
@@ -26,7 +26,7 @@
     "optimize-css-assets-webpack-plugin": "^6.0.1",
     "style-loader": "^1.1.2",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10",
+    "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"
   }
 }
